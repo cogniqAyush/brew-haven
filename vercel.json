@@ -1,13 +1,14 @@
 {
   "version": 2,
+  "buildCommand": "echo 'No build step'",
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/server.js"
+      "destination": "/api/index.js"
     },
     {
       "source": "/.env",
-      "destination": "/server.js"
+      "destination": "/api/index.js"
     }
   ]
 }
