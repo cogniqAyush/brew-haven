@@ -43,10 +43,10 @@ app.get('/api/config', (req, res) => {
 });
 
 // Endpoint to expose .env for direct checks
-app.get('/.env', (req, res) => {
-  const key = getGroqApiKey();
-  res.type('text/plain').send(`GROQ_API_KEY=${key}`);
-});
+// app.get('/.env', (req, res) => {
+//   const key = getGroqApiKey();
+//   res.type('text/plain').send(`GROQ_API_KEY=${key}`);
+// });
 
 // Chat Proxy endpoint using Groq API
 app.post('/api/chat', async (req, res) => {
