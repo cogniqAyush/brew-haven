@@ -1,0 +1,8 @@
+{
+  "name": "Brew Haven Café",
+  "description": "Artisan coffee shop web app featuring menu browsing, interactive shopping cart, checkout modal, and AI barista chatbot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

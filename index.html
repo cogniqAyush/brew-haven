@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew Haven Café – Every Cup Tells a Story</title>
+  <meta name="description" content="Welcome to Brew Haven Café. Enjoy freshly brewed artisan coffee, organic tea, delectable snacks, and handcrafted desserts in a cozy atmosphere." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=4.0" />
+</head>
+<body>
+
+  <!-- ── PAGE PRELOADER ── -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="cup-loader">
+        <div class="steam steam1"></div>
+        <div class="steam steam2"></div>
+        <div class="steam steam3"></div>
+        <div class="cup-body"></div>
+        <div class="cup-handle"></div>
+      </div>
+      <p class="loader-text">Brewing Perfection...</p>
+    </div>
+  </div>
+
+  <!-- ── STICKY NAVIGATION BAR ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <svg class="logo-svg" viewBox="0 0 100 100" width="48" height="48" aria-label="Brew Haven Logo">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M30 65 Q 50 78, 70 65 L 67 40 Q 50 38, 33 40 Z" fill="currentColor" opacity="0.9"/>
+          <path d="M70 45 C 82 45, 82 60, 70 60" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M42 35 C 38 25, 52 20, 48 12" fill="none" stroke="#C89B3C" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M58 35 C 54 25, 68 20, 62 12" fill="none" stroke="#C89B3C" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Brew Haven</span>
+          <span class="brand-tagline">CAFÉ</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Cart Button -->
+        <button id="cartBtn" class="icon-btn cart-btn" aria-label="Shopping Cart" title="View Cart">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span id="cartBadge" class="cart-badge">0</span>
+        </button>
+
+        <!-- Order CTA -->
+        <a href="#menu" class="btn-primary nav-cta-btn">Order Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ── -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-crown"></i> Premium Artisan Coffee
+      </div>
+      <h1 class="hero-heading">Welcome to <br/><span class="text-gold">Brew Haven Café</span></h1>
+      <p class="hero-subheading">Freshly Brewed Happiness Every Day. Every Cup Tells a Story.</p>
+      <div class="hero-cta-group">
+        <a href="#menu" class="btn-primary btn-lg"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
+        <a href="#order-now" class="btn-secondary btn-lg" id="heroOrderBtn"><i class="fa-solid fa-basket-shopping"></i> Order Now</a>
+      </div>
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <i class="fa-solid fa-seedling"></i>
+          <span>100% Organic Beans</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-wifi"></i>
+          <span>High-Speed WiFi</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-award"></i>
+          <span>Handcrafted Pastries</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down-arrow" aria-label="Scroll Down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ── ABOUT US SECTION ── -->
+  <section id="about" class="about-section section-padding">
+    <div class="container grid-2-col align-center">
+      <div class="about-image-wrapper reveal-left">
+        <div class="image-frame">
+          <img src="images/coffee_menu.png" alt="Brew Haven Café Ambiance & Artisan Coffee" class="about-img" />
+          <div class="experience-badge">
+            <span class="badge-number">10+</span>
+            <span class="badge-text">Years of Coffee Crafting</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-content reveal-right">
+        <span class="section-tag">ABOUT OUR CAFÉ</span>
+        <h2 class="section-heading">Crafting Stories, One Cup at a Time</h2>
+        <p class="about-description">
+          At <strong>Brew Haven Café</strong>, coffee isn't just a drink — it's a sacred daily ritual and a passion for handcrafted perfection. Founded in the heart of Downtown New York, we source 100% shade-grown, fair-trade organic beans directly from sustainable farms around the globe.
+        </p>
+        <p class="about-description">
+          Whether you're looking for a peaceful corner to work, meeting old friends over a creamy latte, or grabbing a quick artisanal roast before your day begins, our cozy environment and friendly baristas are here to make you feel right at home.
+        </p>
+        <div class="about-features-list">
+          <div class="feature-bullet">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Locally Sourced & Ethically Grown Beans</span>
+          </div>
+          <div class="feature-bullet">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Master Baristas Trained in Latte Art</span>
+          </div>
+          <div class="feature-bullet">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Comfortable Workspace with Ultra-Fast WiFi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED MENU SECTION ── -->
+  <section id="menu" class="menu-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">OUR SPECIALTIES</span>
+        <h2 class="section-heading">Savor the Craft, Taste the Excellence</h2>
+        <p class="section-subtext">Discover our rich selection of artisan coffees, brewed teas, savory snacks, and heavenly desserts.</p>
+      </div>
+
+      <!-- Menu Category Tabs -->
+      <div class="menu-tabs-wrapper">
+        <button class="menu-tab active" data-category="coffee">
+          <i class="fa-solid fa-mug-hot"></i> Coffee
+        </button>
+        <button class="menu-tab" data-category="tea">
+          <i class="fa-solid fa-leaf"></i> Tea
+        </button>
+        <button class="menu-tab" data-category="snacks">
+          <i class="fa-solid fa-cookie-bite"></i> Snacks
+        </button>
+        <button class="menu-tab" data-category="desserts">
+          <i class="fa-solid fa-cake-candles"></i> Desserts
+        </button>
+      </div>
+
+      <!-- Menu Cards Container -->
+      <div id="menuCardsContainer" class="menu-cards-grid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ── GALLERY SECTION ── -->
+  <section id="gallery" class="gallery-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">VISUAL STORY</span>
+        <h2 class="section-heading">Café Gallery</h2>
+        <p class="section-subtext">Take a peek inside Brew Haven Café — our coffee, atmosphere, and happy moments.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Fresh Coffee Cups" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Fresh Coffee Cups</h4>
+              <p>Handcrafted espresso beverages</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Cozy Café Interior" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Café Interior</h4>
+              <p>Warm and welcoming seating area</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Handcrafted Desserts" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Handcrafted Desserts</h4>
+              <p>Freshly baked daily pastries</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80" alt="Intricate Latte Art" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Intricate Latte Art</h4>
+              <p>Poured with passion and precision</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Happy Customers" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Happy Customers</h4>
+              <p>Creating memorable cafe moments</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Barista Preparing Coffee" class="gallery-img" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Baristas at Work</h4>
+              <p>Mastering every roast & pour</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CUSTOMER REVIEWS CAROUSEL ── -->
+  <section id="reviews" class="reviews-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-heading">What Our Guests Say</h2>
+        <p class="section-subtext">Real stories from our valued coffee lovers.</p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-track-wrapper" id="carouselTrackWrapper">
+          <div class="carousel-track" id="reviewsTrack">
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" />
+              </div>
+              <p class="review-text">"Best coffee I've ever had! Cozy atmosphere and friendly staff."</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Sarah Johnson</h4>
+              <span class="reviewer-title">Verified Customer</span>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Michael Lee" />
+              </div>
+              <p class="review-text">"Amazing latte art and delicious desserts."</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Michael Lee</h4>
+              <span class="reviewer-title">Coffee Connoisseur</span>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Emily Carter" />
+              </div>
+              <p class="review-text">"Great place to work while enjoying premium coffee."</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Emily Carter</h4>
+              <span class="reviewer-title">Remote Professional</span>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Wilson" />
+              </div>
+              <p class="review-text">"Affordable prices, quick service, and the best cold brew!"</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h4 class="reviewer-name">David Wilson</h4>
+              <span class="reviewer-title">Regular Guest</span>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Sophia Martinez" />
+              </div>
+              <p class="review-text">"The cold brew and freshly baked croissants are unmatched in NY!"</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Sophia Martinez</h4>
+              <span class="reviewer-title">Local Foodie</span>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" />
+              </div>
+              <p class="review-text">"Fast WiFi, incredible matcha latte, and super cozy seating."</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Marcus Vance</h4>
+              <span class="reviewer-title">Digital Nomad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls-bottom">
+          <button class="carousel-btn prev-btn" id="prevReviewBtn" aria-label="Previous Review">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots">
+            <!-- Generated dynamically via JavaScript -->
+          </div>
+          <button class="carousel-btn next-btn" id="nextReviewBtn" aria-label="Next Review">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ── CONTACT & LOCATION SECTION ── -->
+  <section id="contact" class="contact-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">FIND & CONNECT</span>
+        <h2 class="section-heading">Visit Brew Haven Café</h2>
+        <p class="section-subtext">Drop by for a warm cup or reach out through any of our channels.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>123 Coffee Street, Downtown,<br/>New York, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@brewhaven.com">hello@brewhaven.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <h4>Working Hours</h4>
+              <p><strong>Mon – Fri:</strong> 8:00 AM – 9:00 PM</p>
+              <p><strong>Sat – Sun:</strong> 9:00 AM – 10:00 PM</p>
+              <div id="liveHoursBadge" class="live-hours-badge">Checking status...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="contact-map-wrapper">
+          <iframe 
+            title="Brew Haven Café Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2152091717834!2d-73.98784412347209!3d40.75797473483787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Footer Brand -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="footer-logo">
+          <svg class="logo-svg" viewBox="0 0 100 100" width="40" height="40">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#C89B3C" stroke-width="3"/>
+            <path d="M30 65 Q 50 78, 70 65 L 67 40 Q 50 38, 33 40 Z" fill="#F5E6D3"/>
+            <path d="M70 45 C 82 45, 82 60, 70 60" fill="none" stroke="#F5E6D3" stroke-width="3.5"/>
+          </svg>
+          <span class="brand-name">Brew Haven</span>
+        </a>
+        <p class="footer-tagline">"Every Cup Tells a Story."</p>
+        <p class="footer-text">Creating cozy, unforgettable cafe moments in New York City since 2016.</p>
+        <div class="footer-brand-socials">
+          <a href="https://instagram.com/brewhavencafe" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://twitter.com/brewhavencafe" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter (X)">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://facebook.com/brewhavencafe" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://linkedin.com/company/brewhavencafe" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+          <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="#reviews"><i class="fa-solid fa-chevron-right"></i> Customer Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Categories -->
+      <div class="footer-col">
+        <h4>Menu Links</h4>
+        <ul class="footer-links">
+          <li><a href="#menu" data-cat-link="coffee"><i class="fa-solid fa-chevron-right"></i> Artisan Coffee</a></li>
+          <li><a href="#menu" data-cat-link="tea"><i class="fa-solid fa-chevron-right"></i> Organic Teas</a></li>
+          <li><a href="#menu" data-cat-link="snacks"><i class="fa-solid fa-chevron-right"></i> Savory Snacks</a></li>
+          <li><a href="#menu" data-cat-link="desserts"><i class="fa-solid fa-chevron-right"></i> Decadent Desserts</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot text-gold"></i> 123 Coffee Street, NY</p>
+        <p><i class="fa-solid fa-phone text-gold"></i> +1 (555) 123-4567</p>
+        <p><i class="fa-solid fa-envelope text-gold"></i> hello@brewhaven.com</p>
+        <p><i class="fa-solid fa-clock text-gold"></i> Mon-Fri: 8AM-9PM | Sat-Sun: 9AM-10PM</p>
+      </div>
+
+      <!-- Coffee Lovers Club Newsletter -->
+      <div class="footer-col newsletter-col">
+        <h4>Coffee Lovers Club</h4>
+        <p class="footer-text">Subscribe for secret menu items, coffee tips & 15% off your first order!</p>
+        <form id="newsletterForm" class="footer-newsletter-form">
+          <div class="footer-input-group">
+            <input type="email" id="newsletterEmail" required placeholder="Enter your email..." />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </div>
+        </form>
+        <div id="newsletterSuccess" class="newsletter-success hidden">
+          🎉 Welcome to the Club! Check your inbox for your 15% discount code.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Brew Haven Café. All Rights Reserved.</p>
+        <div class="footer-bottom-socials">
+          <a href="https://instagram.com/brewhavencafe" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/15551234567" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://twitter.com/brewhavencafe" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com/brewhavencafe" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://linkedin.com/company/brewhavencafe" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING BEANBOT CHATBOT ── -->
+  <div id="chatbotContainer" class="chatbot-container">
+    <!-- Chatbot Window -->
+    <div id="chatWindow" class="chat-window hidden">
+      <div class="chat-header">
+        <div class="bot-profile">
+          <div class="bot-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h4 class="bot-name">BeanBot <span id="aiBadge" class="ai-badge local">Smart Bot</span></h4>
+            <span class="bot-status-text">Online • Brew Haven Assistant</span>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button id="closeChatBtn" class="chat-close-btn" aria-label="Close Chat">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="chatMessages" class="chat-messages">
+        <!-- Initial Welcome Message -->
+        <div class="chat-message bot-message">
+          <div class="msg-bubble">
+            Hello! Welcome to Brew Haven Café ☕<br/>How can I help you today?
+          </div>
+          <span class="msg-timestamp">Just now</span>
+        </div>
+      </div>
+
+      <!-- Suggested Questions Carousel / Grid -->
+      <div class="chat-suggestions-box" id="chatSuggestionsBox">
+        <p class="suggestions-label">Suggested Questions:</p>
+        <div class="suggestions-chips" id="suggestionsChips">
+          <button class="chip-btn" data-question="What are today's specials?">What are today's specials?</button>
+          <button class="chip-btn" data-question="What are your opening hours?">What are your opening hours?</button>
+          <button class="chip-btn" data-question="Do you offer takeaway?">Do you offer takeaway?</button>
+          <button class="chip-btn" data-question="Do you have free WiFi?">Do you have free WiFi?</button>
+          <button class="chip-btn" data-question="Where are you located?">Where are you located?</button>
+          <button class="chip-btn" data-question="Can I reserve a table?">Can I reserve a table?</button>
+          <button class="chip-btn" data-question="What payment methods do you accept?">What payment methods do you accept?</button>
+          <button class="chip-btn" data-question="Do you have vegan options?">Do you have vegan options?</button>
+          <button class="chip-btn" data-question="What desserts are available?">What desserts are available?</button>
+          <button class="chip-btn" data-question="Do you offer home delivery?">Do you offer home delivery?</button>
+          <button class="chip-btn" data-question="How can I contact customer support?">How can I contact customer support?</button>
+          <button class="chip-btn" data-question="Do you have loyalty rewards?">Do you have loyalty rewards?</button>
+        </div>
+      </div>
+
+      <!-- Chat Input Form -->
+      <form id="chatForm" class="chat-input-form">
+        <input type="text" id="chatInput" placeholder="Type your message here..." autocomplete="off" />
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Floating Toggle FAB -->
+    <button id="chatbotFab" class="chatbot-fab" aria-label="Open Chatbot" title="Chat with BeanBot">
+      <span class="fab-badge">1</span>
+      <i class="fa-solid fa-robot fab-icon-chat"></i>
+      <i class="fa-solid fa-xmark fab-icon-close"></i>
+    </button>
+  </div>
+
+  <!-- ── SLIDE-OVER SHOPPING CART DRAWER ── -->
+  <div id="cartOverlay" class="cart-overlay hidden"></div>
+  <div id="cartDrawer" class="cart-drawer hidden">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-basket-shopping text-gold"></i> Your Order Cart</h3>
+      <button id="closeCartBtn" class="close-cart-btn" aria-label="Close Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div id="cartItemsList" class="cart-items-list">
+      <!-- Cart Items Rendered Here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal" class="summary-price">$0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Estimated Tax (8%):</span>
+        <span id="cartTax" class="summary-price">$0.00</span>
+      </div>
+      <div class="cart-summary-row grand-total">
+        <span>Total:</span>
+        <span id="cartTotal" class="summary-price">$0.00</span>
+      </div>
+      <button id="checkoutBtn" class="btn-primary btn-block btn-lg" disabled>
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- ── CHECKOUT MODAL SIMULATION ── -->
+  <div id="checkoutModal" class="checkout-modal-backdrop hidden">
+    <div class="checkout-modal-content">
+      <button id="closeCheckoutBtn" class="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="text-center">
+        <i class="fa-solid fa-circle-check modal-icon-success"></i>
+        <h2>Order Placed Successfully!</h2>
+        <p>Thank you for ordering with Brew Haven Café. Your order is being freshly prepared with love.</p>
+        <div class="order-details-box" id="checkoutOrderDetails">
+          <!-- Summary inserted via JS -->
+        </div>
+        <button id="finishOrderBtn" class="btn-primary btn-block">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SCROLL TO TOP BUTTON ── -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js?v=4.0"></script>
+</body>
+</html>
